@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="slider">
+
+            <div class="innerSlide fadeOut">
+                <img src="images/pix1.jpeg" alt="">
+                <h3>Secured</h3>
+            </div>
+              
+            <div class="innerSlide fadeOut">
+                <img src="images/pix2.jpeg" alt="">
+                <h3>Peaceful</h3>
+            </div>
+    
+            <div class="innerSlide fadeOut">
+                <img src="images/pix3.jpeg" alt="">
+                <h3>Friendly</h3>
+            </div>
+    
+            <div class="innerSlide fadeOut">
+                <img src="images/pix4.jpeg" alt="">
+                <h3>Warmth</h3>
+            </div>
+    
+            <div class="innerSlide fadeOut">
+                <img src="images/pix5.jpeg" alt="">
+                <h3>Loving</h3>
+            </div>
+        
+              <a href="" class="forward" onclick="addSlides(1)">
+                <svg class="sub-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg> 
+              </a>
+        
+              <a href="" class="backward" onclick="addSlides(-1)">
+                <svg class="sub-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </a>       
+        
+        </div>
+        <br>
+        
+        <div class="dot-section">
+              <span class="dot" onclick="newSlide(1)"></span>
+              <span class="dot" onclick="newSlide(2)"></span>
+              <span class="dot" onclick="newSlide(3)"></span>
+              <span class="dot" onclick="newSlide(4)"></span>
+              <span class="dot" onclick="newSlide(5)"></span>
+        
+        </div>
+        
+
+    </main>
+    
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+/* Slide section */
+*{box-sizing:border-box;}
+
+body{
+    background-color: black;
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+h3{
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    padding: 2px 12px;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+.slider{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .innerSlide{
+    display: none;
+  }
+
+
+.sub-svg{
+    width:30px;
+  }
+  
+  .forward, .backward{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .forward{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .backward:hover, .forward:hover{
+    color: rgba(0,0,0,0.8);
+  }
+  
+  .dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot-section{
+    text-align: center;
+  }
+  
+  .active, .dot:hover{
+    background-color: #717171;
+  }
+  /* Fading out animation */
+  .fadeOut{
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to{opacity: 1}
+    
+  }
+  
+  @media only screen and (max-width:300px){
+    .forward, .backward, h3{
+      font-size: 11px;
+    }
+}
